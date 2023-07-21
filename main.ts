@@ -21,11 +21,11 @@ radio.onReceivedNumber(function (receivedNumber) {
         servos.P1.setAngle(120)
     }
     if (Comando == 3) {
-        basic.showIcon(IconNames.Square)
-        basic.pause(100)
-        basic.showIcon(IconNames.SmallSquare)
         music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Baddy), music.PlaybackMode.InBackground)
-        servos.P1.setAngle(90)
+        servos.P1.setAngle(0)
+        basic.showIcon(IconNames.Square)
+        basic.pause(500)
+        basic.showIcon(IconNames.SmallSquare)
     }
 })
 let Comando = 0
